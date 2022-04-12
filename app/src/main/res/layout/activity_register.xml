@@ -4,99 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
-    tools:context=".activities.LoginActivity"
-    >
+    tools:context=".activities.RegisterActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="450dp"
-        app:lottie_rawRes="@raw/lottelogin"
+        app:lottie_rawRes="@raw/register"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
 
+    <com.example.android.sahayata.utils.MSATextView
+        android:id="@+id/Sign_up"
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/btn_lbl_signup"
+        android:textSize="@dimen/title_textSize" />
+
     <com.example.android.sahayata.utils.MSAEditText
-        android:id="@+id/editTextTextEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="406dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="282dp"
         android:ems="10"
         android:hint="@string/et_hint_email_id"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/colorSecondaryText" />
+        android:inputType="textEmailAddress" />
 
     <com.example.android.sahayata.utils.MSAEditText
-        android:id="@+id/editTextTextPassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="337dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="341dp"
         android:ems="10"
-        android:hint="@string/et_hint_password"
-        android:inputType="textPassword"
-        android:textColorHint="@color/colorSecondaryText" />
+        android:hint="@string/et_hint_name"
+        android:inputType="textPersonName" />
 
-    <com.example.android.sahayata.utils.MSATextView
-        android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="290dp"
-        android:text="@string/lbl_forget_password" />
-
-    <com.example.android.sahayata.utils.MSAButton
-        android:id="@+id/button"
+    <com.example.android.sahayata.utils.MSAEditText
+        android:id="@+id/editTextTextPassword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="216dp"
-        android:background="@drawable/button_background"
-        android:text="@string/btn_lbl_login"
-        android:textAllCaps="false" />
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:hint="@string/et_hint_unique_code"
+        android:inputType="textPassword" />
 
-    <com.example.android.sahayata.utils.MSATextViewBold
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="189dp"
-        android:layout_marginBottom="157dp"
-        android:text="@string/or_or" />
-
-    <com.example.android.sahayata.utils.MSAButton
-        android:id="@+id/login_with_phone"
+    <com.example.android.sahayata.utils.MSAEditText
+        android:id="@+id/editTextTextPassword3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="206dp"
+        android:ems="10"
+        android:hint="@string/bt_id_bt"
+        android:inputType="textPassword" />
+
+    <com.example.android.sahayata.utils.MSAEditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="141dp"
+        android:ems="10"
+        android:hint="@string/et_hint_phone"
+        android:inputType="phone" />
+
+    <com.example.android.sahayata.utils.MSAButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/button_background"
-        android:text="@string/login_phone"
-        android:textAllCaps="false" />
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:textSize="@dimen/btn_textSize"
+        android:textAllCaps="false"
+        android:text="@string/btnn_lbl_signup" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,19 +115,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="65dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="14dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
 
         <com.example.android.sahayata.utils.MSATextViewBold
-            android:id="@+id/tv_don_t_have_an_account"
+            android:id="@+id/already_have_an_account"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="19dp"
 
             android:padding="@dimen/clickable_text_view_padding"
-            android:text="@string/don_t_have_an_account"
+            android:text="@string/already_have_an_account"
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/lbl_text_view_textSize" />
 
@@ -128,13 +137,12 @@
             android:layout_alignParentEnd="true"
             android:foreground="?attr/selectableItemBackground"
             android:padding="@dimen/clickable_text_view_padding"
-            android:text="@string/register"
+            android:text="@string/btn_lbl_login"
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/lbl_text_view_textSize" />
 
 
 
     </LinearLayout>
-
 
 </RelativeLayout>

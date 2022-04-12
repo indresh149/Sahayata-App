@@ -13,6 +13,7 @@ import android.view.WindowManager
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.res.ResourcesCompat
 import com.example.android.sahayata.activities.LoginActivity
+import com.example.android.sahayata.activities.RegisterActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
