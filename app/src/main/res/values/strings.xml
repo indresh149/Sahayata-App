@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Sahayata</string>
-    <string name ="sahayata">Sahayata</string>
-    <string name ="tagline">Community for our Superheros</string>
+    <string name="sahayata">Sahayata</string>
+    <string name="tagline">Community for our Superheros</string>
+    <string name="title_login">Welcome back\!</string>
+    <string name="et_hint_email_id">Email ID</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forget_password">Forgot Password?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="login_phone">Login with Phone!</string>
+    <string name="don_t_have_an_account">New to this Platform?</string>
+    <string name="register"><u>Register</u></string>
+    <string name="or_or"><u>OR</u></string>
 </resources>

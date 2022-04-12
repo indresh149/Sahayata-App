@@ -3,13 +3,13 @@ package com.example.android.sahayata.utils
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatEditText
+import androidx.appcompat.widget.AppCompatButton
 
-class MSAEditText (context: Context, attrs: AttributeSet):AppCompatEditText(context, attrs){
 
-  init {
-      applyFont()
-  }
+class MSAButton (context: Context, attrs: AttributeSet): AppCompatButton(context, attrs){
+    init {
+        applyFont()
+    }
 
     private fun applyFont() {
         val typeface: Typeface =
