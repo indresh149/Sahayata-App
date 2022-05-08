@@ -132,6 +132,7 @@
             android:textSize="@dimen/lbl_text_view_textSize" />
 
         <com.example.android.sahayata.utils.MSATextViewBold
+            android:id="@+id/tv_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

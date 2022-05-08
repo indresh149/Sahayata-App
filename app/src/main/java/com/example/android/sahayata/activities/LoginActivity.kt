@@ -5,41 +5,41 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.Button
+import android.widget.EditText
 import com.example.android.sahayata.R
 
 class LoginActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val bottonregister = findViewById<View>(R.id.tv_register)
+
         @Suppress("DEPRECATION")
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                window.insetsController?.hide(WindowInsets.Type.statusBars())
-            }
-        }else{
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.insetsController?.hide(WindowInsets.Type.statusBars())
+
+        } else {
             window.setFlags(
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-        @Suppress("DEPRECATION")
-        Handler().postDelayed(
-            {
-                startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
-                finish()
-            },
-            10000
-        )
 
-        //  val typeface: Typeface = Typeface.createFromAsset(assets,"Mogata.ttf")
-        //  tv_app_name.typeface = typeface
+
+        bottonregister.setOnClickListener {
+            val intent = Intent(this@LoginActivity,RegisterActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
 
-private fun Handler.postDelayed(function: () -> Unit) {
 
-}
+
