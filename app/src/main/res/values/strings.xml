@@ -6,8 +6,8 @@
     <string name="et_hint_email_id">Email ID</string>
     <string name="et_hint_password">Password</string>
     <string name="et_hint_phone">Phone No.</string>
-    <string name="et_hint_name">\Name</string>
-    <string name="et_hint_unique_code">Unique Code</string>
+    <string name="et_hint_name">Name</string>
+    <string name="et_reg_password">Password</string>
     <string name="et_hint_unique_code_">Battalion ID </string>
     <string name="lbl_forget_password">Forgot Password?</string>
     <string name="btn_lbl_login">Login</string>

@@ -19,19 +19,20 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-
-        @Suppress("DEPRECATION")
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                window.insetsController?.hide(WindowInsets.Type.statusBars())
-            }
-        }else{
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        }
-
+//
+//        @Suppress("DEPRECATION")
+//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+//                // for now i have changes hide to show status bar
+//                window.insetsController?.show(WindowInsets.Type.statusBars())
+//            }
+//        }else{
+//            window.setFlags(
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN
+//            )
+//        }
+//
         @Suppress("DEPRECATION")
         Handler().postDelayed(
             {
