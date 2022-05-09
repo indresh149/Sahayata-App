@@ -16,6 +16,11 @@
         app:lottie_rawRes="@raw/lottelogin"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/login_progress">
+    </ProgressBar>
 
     <com.example.android.sahayata.utils.MSAEditText
         android:id="@+id/et_first_email"
@@ -34,7 +39,7 @@
         android:textColorHint="@color/colorSecondaryText" />
 
     <com.example.android.sahayata.utils.MSAEditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,7 +90,7 @@
         android:text="@string/or_or" />
 
     <com.example.android.sahayata.utils.MSAButton
-        android:id="@+id/login_with_phone"
+        android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -122,8 +127,9 @@
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/lbl_text_view_textSize" />
 
-        <com.example.android.sahayata.utils.MSATextView
+        <TextView
             android:id="@+id/tv_register"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -132,7 +138,7 @@
             android:padding="@dimen/clickable_text_view_padding"
             android:text="@string/register"
             android:textAllCaps="false"
-            android:textColor="@color/colorSecondaryText"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/lbl_text_view_textSize" />
 
 
