@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "746760557071",
+    "project_id": "sahayta-test",
+    "storage_bucket": "sahayta-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746760557071:android:ea836be751b00cf9cc497a",
+        "android_client_info": {
+          "package_name": "com.example.android.sahayata.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746760557071-imau8d5bu7ja0o7cq2ogmjdcr3hoc6m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.sahayata.activities",
+            "certificate_hash": "6c33f738b8ba01723063e5d22abee5da0b519b0e"
+          }
+        },
+        {
+          "client_id": "746760557071-vo7j3n8n3m75bbmqu53c8jfv7lhegipe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD09wl-AvjbgzDkAaOh_Wcd0VSfNzutIUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746760557071-vo7j3n8n3m75bbmqu53c8jfv7lhegipe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
