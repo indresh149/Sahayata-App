@@ -22,4 +22,8 @@
     <string name="err_msg_enter_email">Please enter Email</string>
     <string name="err_msg_enter_name">Please enter Name</string>
     <string name="err_msg_enter_phone_number">Please enter Phone Number</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
