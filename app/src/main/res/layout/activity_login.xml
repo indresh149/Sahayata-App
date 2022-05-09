@@ -18,7 +18,7 @@
         app:lottie_loop="true"/>
 
     <com.example.android.sahayata.utils.MSAEditText
-        android:id="@+id/editTextTextEmail"
+        android:id="@+id/et_first_email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

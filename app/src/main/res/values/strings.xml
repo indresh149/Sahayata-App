@@ -19,4 +19,7 @@
     <string name="already_have_an_account">Already have an Account?</string>
     <string name="register"><u>Register</u></string>
     <string name="or_or"><u>OR</u></string>
+    <string name="err_msg_enter_email">Please enter Email</string>
+    <string name="err_msg_enter_name">Please enter Name</string>
+    <string name="err_msg_enter_phone_number">Please enter Phone Number</string>
 </resources>
